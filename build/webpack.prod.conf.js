@@ -45,7 +45,7 @@ module.exports = env => {
                 "proccess.env.NODE_ENV": env
             }),
             new HtmlWebpackPlugin({
-                title: '零云平台移动端',
+                title: '移动端',
                 template: resolve('public/index.html'),
                 filename: 'index.html',
                 hash: true,
