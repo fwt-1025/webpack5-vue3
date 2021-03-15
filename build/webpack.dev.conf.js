@@ -35,7 +35,7 @@ module.exports = env => {
             }),
             new HtmlWebpackPlugin({
                 template: resolve('public/index.html'),
-                title: '零云平台移动端',
+                title: '移动端',
                 filename: 'index.html',
                 inject: true,
                 favicon: resolve('public/favicon.ico')
