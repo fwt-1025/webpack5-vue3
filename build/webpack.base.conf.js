@@ -95,7 +95,7 @@ module.exports = env => ({
         new VueLoaderPlugin(),
         new MiniCssExtractPlugin({
             filename: env === 'development' ? '[name].css' : 'css/[name]-[contenthash:7].css',
-            chunkFilename: env === 'development' ? '[name].css' : 'css/[name]=[id][contenthash:7].css'
+            chunkFilename: env === 'development' ? '[name].css' : 'css/[name]-[id][contenthash:7].css'
         })
     ]
 })
