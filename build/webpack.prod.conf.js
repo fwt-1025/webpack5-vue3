@@ -45,7 +45,7 @@ module.exports = env => {
                 "proccess.env.NODE_ENV": env
             }),
             new HtmlWebpackPlugin({
-                title: '移动端',
+                title: 'webpack搭建vue3-fwt',
                 template: resolve('public/index.html'),
                 filename: 'index.html',
                 hash: true,

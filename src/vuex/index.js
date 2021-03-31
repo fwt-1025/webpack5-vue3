@@ -5,7 +5,7 @@ const store = createStore({
         activeMenu: 'home'
     },
     mutations: {
-        setActiveMenu (state, data) {
+        setActiveMenu(state, data) {
             state.activeMenu = data
         }
     }

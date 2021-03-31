@@ -29,7 +29,7 @@ module.exports = {
                 let iface = network[dev]
                 iface.forEach(item => {
                     if (item.family === "IPv4" && item.address !== "127.0.0.1" && !item.internal) {
-                        netHost = alias.address
+                        netHost = item.address
                     }
                 })
             }

@@ -1,10 +1,39 @@
 {
     "compilerOptions": {
-        // "jsx": "preserve",
+        "target": "esnext",
+        "module": "esnext", // 指定生成哪个模块系统代码
+        "strict": true,
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "jsx": "preserve",
         "baseUrl": ".",
         "paths": {
-            "@/*": ["*", "src/*"]
-        }
+            "@/*": ["src/*"]
+        },
+        "types": [
+            "node",
+            "jest",
+            "webpack-env"
+        ],
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost"
+          ]
     },
-    "noImplicitAny": false
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }

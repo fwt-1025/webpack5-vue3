@@ -9,7 +9,9 @@ declare module '*.ts' {
     export default content
 }
 
-declare module 'axios'
+// declare module 'axios'
+
+// declare module '@/request/axios'
 
 declare module 'vue-router'
 

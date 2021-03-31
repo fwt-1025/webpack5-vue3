@@ -3,7 +3,7 @@ module.exports = {
         [
             "@babel/preset-env",
             {
-                "useBuiltIns": "entry",
+                "useBuiltIns": "usage",
                 modules: false,
                 corejs: 3
             }
@@ -16,6 +16,7 @@ module.exports = {
                 libraryDirectory: 'es',
                 style: true
             }, 'vant'
-        ]
+        ],
+        ["@babel/plugin-syntax-dynamic-import"]
     ]
 }
